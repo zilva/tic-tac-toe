@@ -1,0 +1,18 @@
+.square {
+    background: #fa9729;
+    margin: 0.25rem;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 5rem;
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+  }
+
+.square:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s
+  }
