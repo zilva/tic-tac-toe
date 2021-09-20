@@ -17,7 +17,7 @@ const checkWinner = (arr) => {
 
     for (let i = 0; i < winningSlots.length; i++) {
         const [a, b, c] = winningSlots[i];
-        if (arr[a] === arr[b] && arr[b] === arr[c]) {
+        if (arr[a] && arr[a] === arr[b] && arr[b] === arr[c]) {
             return arr[a];
         }
     }
@@ -37,10 +37,11 @@ const Board = () => {
     const [squares, setSquares] = useState(Array(9).fill(null));
     const [xIsNext, setXIsNext] = useState(true);
     const [isDraw, setIsDraw] = useState(false);
-    const winner = checkWinner(squares);
+    const [winner, setWinnder] = useState(null)
     const status = winner ? `Winner is : ${winner}` : `Next Player : ${xIsNext ? 'X' : 'O'}` 
 
     useEffect(()=>{
+        setWinnder(checkWinner(squares));
         setIsDraw(checkDraw(squares));
     },[squares])
 
