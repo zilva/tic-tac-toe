@@ -101,7 +101,7 @@ const Board = () => {
             <div className='play-again' onClick={handlePlayAgain}>
                 <img
                     style={{width:"4rem", height:"4rem", cursor:"pointer"}}
-                    src='https://cdn2.iconfinder.com/data/icons/video-player-interface/100/video_player-15-512.png'
+                    src='playagain.png'
                     alt="Play again"
                     />
             </div>
