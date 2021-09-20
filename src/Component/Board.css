@@ -9,6 +9,10 @@
     opacity: 0.2;
 }
 
+.play-view {
+    display: grid;
+}
+
 .end-view {
     position: fixed;
     display: flex;
