@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
