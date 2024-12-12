@@ -30,7 +30,7 @@
     padding: 0.25rem 3rem;
     margin: 2rem 0;
     border: none;
-    background: #ff4949;
+    background: #6449ff;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -38,9 +38,24 @@
 .restart-btn:hover {
     transform: scale(1.1);
     transition-duration: 0.2s
-  }
+}
+
+.thrw-error-btn {
+    padding: 0.25rem 3rem;
+    margin: 2rem 0;
+    border: none;
+    background: #ff4949;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+        transition-duration: 0.2s
+    }
+}
 
 .play-again:hover {
     transform:rotate(180deg);
     transition-duration: 0.2s
 }
+

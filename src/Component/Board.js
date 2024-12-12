@@ -45,6 +45,10 @@ const Board = () => {
         setIsDraw(checkDraw(squares));
     },[squares])
 
+    const throwError = () => {
+        throw new Error('Parameter is not a number!');
+    }
+
     const handleOnClick = (i) => {
         // cannot go further
         //     if there is a winner
@@ -119,6 +123,13 @@ const Board = () => {
                 role="button"
             >
                 Restart
+            </div>
+            <div
+                className="thrw-error-btn"
+                onClick={throwError}
+                role="button"
+            >
+                Testing - Throw an Error
             </div>
         </div>
     );
