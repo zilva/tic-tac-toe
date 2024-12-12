@@ -45,8 +45,7 @@ const Board = () => {
         setIsDraw(checkDraw(squares));
     },[squares])
 
-    const throwError = () => {
-        throw new Error('Parameter is not a number!');
+    const throwError = () => {'Unhandled error!');
     }
 
     const handleOnClick = (i) => {
