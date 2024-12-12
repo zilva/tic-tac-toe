@@ -45,7 +45,8 @@ const Board = () => {
         setIsDraw(checkDraw(squares));
     },[squares])
 
-    const throwError = () => {'Unhandled error!');
+    const throwError = () => {
+        throw new Error('Unhandled error!');
     }
 
     const handleOnClick = (i) => {
