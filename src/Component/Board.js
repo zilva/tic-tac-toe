@@ -49,6 +49,14 @@ const Board = () => {
         throw new Error('Unhandled error AAAAAAAa!');
     }
 
+    const throwError2 = () => {
+        window.gtag('event', 'error_event', {
+            error_message: 'Aluth error ekak',
+            error_type: 'aluth type akak',
+            error_stack: 'Kiyanna kisiwak nomatha',
+        });
+    }
+
     const handleOnClick = (i) => {
         // cannot go further
         //     if there is a winner
@@ -130,6 +138,13 @@ const Board = () => {
                 role="button"
             >
                 Testing - Throw an Error
+            </div>
+            <div
+                className="thrw-error-btn"
+                onClick={throwError2}
+                role="button"
+            >
+                Throw NEWWW
             </div>
         </div>
     );
