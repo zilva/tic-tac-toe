@@ -46,7 +46,7 @@ const Board = () => {
     },[squares])
 
     const throwError = () => {
-        throw new Error('Unhandled error!');
+        throw new Error('Unhandled error AAAAAAAa!');
     }
 
     const handleOnClick = (i) => {
